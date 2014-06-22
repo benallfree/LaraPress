@@ -2,12 +2,12 @@
 
 namespace Zae\LaraPress;
 
-class UserMeta extends \Eloquent {
+class UserMeta extends \Illuminate\Database\Eloquent\Model {
 
 	protected $table = 'usermeta';
 	protected $primaryKey = 'umeta_id';
-	protected $appends = ['id', 'key', 'value'];
-	protected $hidden = ['umeta_id', 'user_id', 'meta_key', 'meta_value'];
+	protected $appends = array('id', 'key', 'value');
+	protected $hidden = array('umeta_id', 'user_id', 'meta_key', 'meta_value');
 	
 	public $timestamps = false;
 

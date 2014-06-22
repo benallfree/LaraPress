@@ -2,7 +2,7 @@
 
 namespace Zae\LaraPress;
 
-class Post extends \Eloquent {
+class Post extends \Illuminate\Database\Eloquent\Model {
 
 	const CREATED_AT = 'post_data';
 	const UPDATED_AT = 'post_modified';

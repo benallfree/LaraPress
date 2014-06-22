@@ -12,7 +12,8 @@
 	"require": {
 		"php": ">=5.3.0",
 		"illuminate/support": "4.1.*",
-		"illuminate/database": "4.1.*"
+		"illuminate/database": "4.1.*",
+    "illuminate/auth": "4.1.*",    
 	},
 	"suggest": {
 		"hampel/wordpress-auth-laravel": "WordPress Auth Driver for Laravel"

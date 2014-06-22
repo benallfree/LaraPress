@@ -2,7 +2,7 @@
 
 namespace Zae\LaraPress;
 
-class Comment extends \Eloquent {
+class Comment extends \Illuminate\Database\Eloquent\Model {
 
 	const CREATED_AT = 'comment_date';
 	const UPDATED_AT = 'comment_date';

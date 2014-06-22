@@ -2,7 +2,7 @@
 
 namespace Zae\LaraPress;
 
-class CommentMeta extends \Eloquent {
+class CommentMeta extends \Illuminate\Database\Eloquent\Model {
 
 	protected $table = 'commentmeta';
 	protected $primaryKey = 'meta_id';

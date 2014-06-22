@@ -5,11 +5,11 @@ namespace Zae\LaraPress;
 use Illuminate\Auth\UserInterface;
 use Illuminate\Auth\Reminders\RemindableInterface;
 
-class User extends \Eloquent implements UserInterface, RemindableInterface {
+class User extends \Illuminate\Database\Eloquent\Model implements UserInterface, RemindableInterface {
 
 	protected $primaryKey = 'ID';
-	protected $appends = ['id', 'login', 'nicename', 'email', 'URL', 'registered', 'activation_key', 'status'];
-	protected $hidden = ['user_pass', 'ID', 'user_login', 'user_nicename', 'user_email', 'user_url', 'user_registered', 'user_activation_key', 'user_status'];
+	protected $appends = array('id', 'login', 'nicename', 'email', 'URL', 'registered', 'activation_key', 'status');
+	protected $hidden = array('user_pass', 'ID', 'user_login', 'user_nicename', 'user_email', 'user_url', 'user_registered', 'user_activation_key', 'user_status');
 	
 	public $timestamps = false;
 

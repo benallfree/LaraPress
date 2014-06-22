@@ -2,7 +2,7 @@
 
 namespace Zae\LaraPress;
 
-class Link extends \Eloquent {
+class Link extends \Illuminate\Database\Eloquent\Model {
 
 	protected $primaryKey = 'link_id';
 

@@ -2,7 +2,7 @@
 
 namespace Zae\LaraPress;
 
-class PostMeta extends \Eloquent {
+class PostMeta extends \Illuminate\Database\Eloquent\Model {
 
 	protected $table = 'postmeta';
 	protected $primaryKey = 'meta_id';

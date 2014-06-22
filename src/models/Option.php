@@ -2,7 +2,7 @@
 
 namespace Zae\LaraPress;
 
-class Option extends \Eloquent {
+class Option extends \Illuminate\Database\Eloquent\Model {
 
 	protected $primaryKey = 'option_id';
 	protected $appends = ['id', 'key', 'value'];
